@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots an event deeply 1`] = `
+<Event
+  event={
+    Object {
+      "date": "2017-08-17",
+      "name": "MidwestJs",
+    }
+  }
+>
+  <article
+    className="event"
+  >
+    <h1>
+      MidwestJs
+    </h1>
+    <Date
+      date="2017-08-17"
+    >
+      <h2
+        className="event-date"
+      >
+        2017-08-17
+      </h2>
+    </Date>
+    <Location />
+  </article>
+</Event>
+`;
+
+exports[`snapshots an event shallowly 1`] = `
+<article
+  className="event"
+>
+  <h1>
+    MidwestJs
+  </h1>
+  <Date
+    date="2017-08-17"
+  />
+  <Location />
+</article>
+`;

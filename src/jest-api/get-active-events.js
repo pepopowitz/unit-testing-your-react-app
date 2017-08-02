@@ -1,11 +1,9 @@
 import { callApi } from './api-client';
 
-export function getActiveEvents() {
+export function getActiveEvents(specifiedApiCall) {
+    if (specifiedApiCall) {
+        return specifiedApiCall();
+    }
+
     callApi();
-}
-
-export function buildRequest(requestBuilder, source) {
-    const request = requestBuilder(source);
-
-    return request;
 }
