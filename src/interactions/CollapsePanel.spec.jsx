@@ -1,10 +1,10 @@
 import CollapsePanel from './CollapsePanel';
 import React from 'react';
 
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 it('is collapsed by default', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
         <CollapsePanel>
             <span>Some contents here</span>
         </CollapsePanel>
@@ -15,7 +15,7 @@ it('is collapsed by default', () => {
 });
 
 it('uncollapses after clicking', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
         <CollapsePanel>
             <span>Some contents here</span>
         </CollapsePanel>
@@ -27,7 +27,7 @@ it('uncollapses after clicking', () => {
 });
 
 it('sets isCollapsed to false after clicking', () => {
-    const wrapper = mount(
+    const wrapper = shallow(
         <CollapsePanel>
             <span>Some contents here</span>
         </CollapsePanel>
