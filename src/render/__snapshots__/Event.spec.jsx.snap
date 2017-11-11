@@ -4,8 +4,8 @@ exports[`snapshots an event deeply 1`] = `
 <Event
   event={
     Object {
-      "date": "2017-08-17",
-      "name": "MidwestJs",
+      "date": "2017-11-11",
+      "name": "Milwaukee Code Camp",
     }
   }
 >
@@ -13,15 +13,15 @@ exports[`snapshots an event deeply 1`] = `
     className="event"
   >
     <h1>
-      MidwestJs
+      Milwaukee Code Camp
     </h1>
     <Date
-      date="2017-08-17"
+      date="2017-11-11"
     >
       <h2
         className="event-date"
       >
-        2017-08-17
+        2017-11-11
       </h2>
     </Date>
     <Location />
@@ -34,10 +34,10 @@ exports[`snapshots an event shallowly 1`] = `
   className="event"
 >
   <h1>
-    MidwestJs
+    Milwaukee Code Camp
   </h1>
   <Date
-    date="2017-08-17"
+    date="2017-11-11"
   />
   <Location />
 </article>

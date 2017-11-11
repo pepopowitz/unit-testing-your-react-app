@@ -6,7 +6,7 @@ import toJson from 'enzyme-to-json';
 
 it('renders an event', () => {
     const event = {
-        name: 'MidwestJs'
+        name: 'Milwaukee Code Camp'
     };
 
     const wrapper = shallow(<Event event={event} />);
@@ -16,8 +16,8 @@ it('renders an event', () => {
 
 it('doesn`t shallow render dates', () => {
     const event = {
-        name: 'MidwestJs',
-        date: '2017-08-17'
+        name: 'Milwaukee Code Camp',
+        date: '2017-11-11'
     };
 
     const wrapper = shallow(<Event event={event} />);
@@ -27,8 +27,8 @@ it('doesn`t shallow render dates', () => {
 
 it('deep renders dates', () => {
     const event = {
-        name: 'MidwestJs',
-        date: '2017-08-17'
+        name: 'Milwaukee Code Camp',
+        date: '2017-11-11'
     };
 
     const wrapper = mount(<Event event={event} />);
@@ -38,8 +38,8 @@ it('deep renders dates', () => {
 
 it('snapshots an event shallowly', () => {
     const event = {
-        name: 'MidwestJs',
-        date: '2017-08-17'
+        name: 'Milwaukee Code Camp',
+        date: '2017-11-11'
     };
 
     const wrapper = shallow(<Event event={event} />);
@@ -49,8 +49,8 @@ it('snapshots an event shallowly', () => {
 
 it('snapshots an event deeply', () => {
     const event = {
-        name: 'MidwestJs',
-        date: '2017-08-17'
+        name: 'Milwaukee Code Camp',
+        date: '2017-11-11'
     };
 
     const wrapper = mount(<Event event={event} />);

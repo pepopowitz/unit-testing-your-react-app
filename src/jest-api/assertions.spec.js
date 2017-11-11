@@ -1,23 +1,23 @@
 describe('examples of assertions', () => {
     it('shows some examples', () => {
         const result = {
-            name: 'MidwestJs',
-            date: 'August 16 - 18',
-            location: 'Twin Cities',
+            name: 'Milwaukee Code Camp',
+            date: 'November 11',
+            location: 'Milwaukee',
             speakers: [
                 {
                     name: 'Steven Hicks'
                 },
                 {
-                    name: 'Safia Abdalla'
+                    name: 'David Pine'
                 },
                 {
-                    name: 'Abraham Williams'
+                    name: 'Dustin Ewers'
                 }
             ]
         };
 
-        expect(result.location).toEqual('Twin Cities');
+        expect(result.location).toEqual('Milwaukee');
         expect(result.speakers).toHaveLength(3);
         expect(result.name).not.toEqual('Marty McFly');
         expect(result.speakers).toEqual(

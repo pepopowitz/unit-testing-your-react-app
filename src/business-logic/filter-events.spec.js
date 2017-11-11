@@ -3,7 +3,7 @@ import filterEvents from './filter-events';
 it('filters out inactive events', () => {
     const events = [
         {
-            name: 'MidwestJs',
+            name: 'Milwaukee Code Camp',
             isActive: true
         },
         {
@@ -15,5 +15,5 @@ it('filters out inactive events', () => {
     const result = filterEvents(events);
 
     expect(result).toHaveLength(1);
-    expect(result[0].name).toEqual('MidwestJs');
+    expect(result[0].name).toEqual('Milwaukee Code Camp');
 });
