@@ -5,7 +5,7 @@ exports[`snapshots an event deeply 1`] = `
   event={
     Object {
       "date": "2017-11-11",
-      "name": "Milwaukee Code Camp",
+      "name": "Milwaukee Code",
     }
   }
 >
@@ -13,7 +13,7 @@ exports[`snapshots an event deeply 1`] = `
     className="event"
   >
     <h1>
-      Milwaukee Code Camp
+      Milwaukee Code
     </h1>
     <Date
       date="2017-11-11"

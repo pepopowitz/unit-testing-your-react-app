@@ -49,7 +49,7 @@ it('snapshots an event shallowly', () => {
 
 it('snapshots an event deeply', () => {
     const event = {
-        name: 'Milwaukee Code Camp',
+        name: 'Milwaukee Code',
         date: '2017-11-11'
     };
 
