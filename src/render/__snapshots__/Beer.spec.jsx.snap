@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots a beer with mount 1`] = `
+<Beer
+  beer={
+    Object {
+      "brewery": "Central Waters",
+      "name": "Mudpuppy Porter",
+    }
+  }
+>
+  <article
+    className="beer"
+  >
+    <h1>
+      Mudpuppy Porter
+    </h1>
+    <Brewery
+      brewery="Central Waters"
+    >
+      <h2
+        className="brewery"
+      >
+        Central Waters
+      </h2>
+    </Brewery>
+    <BeerStyle />
+  </article>
+</Beer>
+`;
+
+exports[`snapshots a beer with render 1`] = `
+<article
+  class="beer"
+>
+  <h1>
+    Mudpuppy Porter
+  </h1>
+  <h2
+    class="brewery"
+  >
+    Central Waters
+  </h2>
+</article>
+`;
+
+exports[`snapshots a beer with shallow 1`] = `
+<article
+  className="beer"
+>
+  <h1>
+    Mudpuppy Porter
+  </h1>
+  <Brewery
+    brewery="Central Waters"
+  />
+  <BeerStyle />
+</article>
+`;

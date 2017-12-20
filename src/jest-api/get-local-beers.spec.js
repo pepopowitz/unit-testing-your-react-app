@@ -1,4 +1,4 @@
-import { getActiveEvents } from './get-active-events';
+import { getLocalBeers } from './get-local-beers';
 import { callApi } from './api-client';
 
 //note that using import { callApi } requires jest.mock to happen outside the describe/it blocks.
@@ -14,13 +14,13 @@ jest.mock('./api-client', () => ({
     callApi: jest.fn()
 }));
 
-describe('getActiveEvents', () => {
+describe('getLocalBeers', () => {
     beforeEach(() => {
         callApi.mockClear();
     });
 
     it('calls the imported api', () => {
-        const result = getActiveEvents();
+        const result = getLocalBeers();
 
         expect(callApi).toHaveBeenCalledTimes(1);
     });
@@ -28,14 +28,14 @@ describe('getActiveEvents', () => {
     it('calls the api function passed in', () => {
         const mockApi = jest.fn();
 
-        getActiveEvents(mockApi);
+        getLocalBeers(mockApi);
 
         expect(mockApi).toHaveBeenCalledTimes(1);
     });
 
     //this test would fail without our beforeEach.
     it('calls the imported api a second time', () => {
-        const result = getActiveEvents();
+        const result = getLocalBeers();
 
         expect(callApi).toHaveBeenCalledTimes(1);
     });

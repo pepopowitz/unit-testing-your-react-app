@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function AddEventButton({ onClick }) {
+export default function AddBeerButton({ onClick }) {
     return (
         <button onClick={onClick}>
-            Add Event <i class="fa fa-plus" />
+            Add Beer <i class="fa fa-plus" />
         </button>
     );
 }

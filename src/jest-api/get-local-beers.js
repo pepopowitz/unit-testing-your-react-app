@@ -1,6 +1,6 @@
 import { callApi } from './api-client';
 
-export function getActiveEvents(specifiedApiCall) {
+export function getLocalBeers(specifiedApiCall) {
     if (specifiedApiCall) {
         return specifiedApiCall();
     }
