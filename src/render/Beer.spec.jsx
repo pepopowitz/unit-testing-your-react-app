@@ -2,7 +2,6 @@ import Beer from './Beer';
 import React from 'react';
 
 import { shallow, render, mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
 it('renders a beer', () => {
     const beer = {
@@ -56,7 +55,7 @@ it('snapshots a beer with shallow', () => {
 
     const wrapper = shallow(<Beer beer={beer} />);
 
-    expect(toJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
 });
 
 it('snapshots a beer with render', () => {
@@ -67,7 +66,7 @@ it('snapshots a beer with render', () => {
 
     const wrapper = render(<Beer beer={beer} />);
 
-    expect(toJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
 });
 
 it('snapshots a beer with mount', () => {
@@ -78,5 +77,5 @@ it('snapshots a beer with mount', () => {
 
     const wrapper = mount(<Beer beer={beer} />);
 
-    expect(toJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
 });

@@ -18,7 +18,7 @@ describe('examples of assertions', () => {
 
         expect(result.location).toEqual('Amherst, WI');
         expect(result.beers).toHaveLength(3);
-        expect(result.name).not.toEqual('Miller');
+        expect(result.name).not.toEqual('High Life');
         expect(result.beers).toEqual(
             expect.arrayContaining([{ name: 'Mudpuppy Porter' }])
         );
